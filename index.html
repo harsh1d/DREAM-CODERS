@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dream Coders — A vibrant community of developers, designers, and innovators building the future together.">
+  <meta property="og:title" content="Dream Coders | Community of Innovators">
+  <meta property="og:description" content="Join Dream Coders — where passionate developers collaborate, learn, and build the future.">
+  <meta property="og:type" content="website">
+  <title>Dream Coders | Community of Innovators</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip to main (accessibility) -->
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ═══════════════ NAVIGATION ═══════════════ -->
+  <header class="site-header" role="banner">
+    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <div class="nav-inner">
+
+        <!-- Logo -->
+        <a href="#" class="nav-logo" aria-label="Dream Coders home">
+          <span class="logo-bracket" aria-hidden="true">&lt;/&gt;</span>
+          <span class="logo-name">Dream<span class="logo-accent">Coders</span></span>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <ul class="nav-links" id="navLinks" role="list">
+          <li><a href="#mission"  class="nav-link">Mission</a></li>
+          <li><a href="#members"  class="nav-link">Members</a></li>
+          <li><a href="#events"   class="nav-link">Events</a></li>
+          <li><a href="#blog"     class="nav-link">Blog</a></li>
+          <li><a href="#contact"  class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- CTA + Hamburger -->
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary nav-cta">Join Community</a>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle mobile menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+          >
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+            <span class="ham-bar"></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section class="hero" id="home" aria-label="Hero">
+      <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+      <div class="hero-inner">
+
+        <!-- Left: content -->
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span class="pill-dot" aria-hidden="true"></span>
+            <span>Where Code Meets Community</span>
+          </div>
+
+          <h1 class="hero-title">
+            Build. <span class="text-gradient">Dream.</span><br>
+            Code Together.
+          </h1>
+
+          <p class="hero-desc">
+            Dream Coders is a thriving community of passionate developers, designers,
+            and innovators — pushing the boundaries of technology, one commit at a time.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#members" class="btn btn-primary btn-lg">
+              Explore Community
+              <i class="fas fa-arrow-right" aria-hidden="true"></i>
+            </a>
+            <a href="#mission" class="btn btn-ghost btn-lg">Our Mission</a>
+          </div>
+
+          <div class="hero-stats" aria-label="Community statistics">
+            <div class="stat-item">
+              <strong><span class="counter" data-target="500">0</span>+</strong>
+              <span>Members</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong><span class="counter" data-target="120">0</span>+</strong>
+              <span>Projects Built</span>
+            </div>
+            <div class="stat-sep" aria-hidden="true"></div>
+            <div class="stat-item">
+              <strong><span class="counter" data-target="50">0</span>+</strong>
+              <span>Events Hosted</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Code Window -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-titlebar">
+              <span class="traffic-light tl-red"></span>
+              <span class="traffic-light tl-yellow"></span>
+              <span class="traffic-light tl-green"></span>
+              <span class="code-filename">dream_coders.py</span>
+            </div>
+            <div class="code-body">
+<pre class="code-pre"><span class="ck">class</span> <span class="cc">DreamCoder</span>:
+  <span class="ck">def</span> <span class="cf">__init__</span>(self):
+    self.passion   <span class="co">=</span> <span class="cs">"infinite"</span>
+    self.community <span class="co">=</span> <span class="cs">"Dream Coders"</span>
+    self.skills    <span class="co">=</span> [
+      <span class="cs">"code"</span>, <span class="cs">"design"</span>,
+      <span class="cs">"collaborate"</span>, <span class="cs">"innovate"</span>
+    ]
+
+  <span class="ck">def</span> <span class="cf">build_future</span>(self):
+    <span class="ck">while</span> self.passion:
+      self.learn_daily()
+      self.create_something()
+      self.inspire_others()
+
+<span class="cd"># The future is coded together</span>
+me <span class="co">=</span> <span class="cc">DreamCoder</span>()
+me.build_future()<span class="cursor-blink">█</span></pre>
+            </div>
+          </div>
+
+          <!-- Floating badges -->
+          <div class="floating-badge badge-1">
+            <i class="fas fa-star" aria-hidden="true"></i>
+            <span>Top Community 2025</span>
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fas fa-users" aria-hidden="true"></i>
+            <span>500+ Members</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ MISSION ═══════════════ -->
+    <section class="section" id="mission" aria-labelledby="mission-heading">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="section-label">Our Purpose</span>
+          <h2 class="section-title" id="mission-heading">
+            Mission &amp; <span class="text-gradient">Vision</span>
+          </h2>
+          <p class="section-desc">
+            We believe the best code is written together. Dream Coders exists to
+            foster a collaborative, inclusive, and innovation-driven developer community.
+          </p>
+        </div>
+
+        <div class="cards-grid cards-3">
+          <div class="card mission-card reveal">
+            <div class="card-icon"><i class="fas fa-rocket" aria-hidden="true"></i></div>
+            <h3>Our Mission</h3>
+            <p>To empower developers at every level — from beginners to experts — to build meaningful projects, sharpen their skills, and connect with like-minded innovators worldwide.</p>
+          </div>
+
+          <div class="card mission-card reveal" style="--delay: 0.1s">
+            <div class="card-icon"><i class="fas fa-eye" aria-hidden="true"></i></div>
+            <h3>Our Vision</h3>
+            <p>A world where every aspiring developer has access to mentorship, resources, and a supportive community — turning ambitious dreams into real-world impact.</p>
+          </div>
+
+          <div class="card mission-card reveal" style="--delay: 0.2s">
+            <div class="card-icon"><i class="fas fa-heart" aria-hidden="true"></i></div>
+            <h3>Our Values</h3>
+            <p>Collaboration over competition. Learning over perfection. Inclusion over exclusivity. We grow together — or not at all.</p>
+          </div>
+        </div>
+
+        <div class="values-row">
+          <div class="value-chip reveal"><i class="fas fa-code" aria-hidden="true"></i> Open Source</div>
+          <div class="value-chip reveal" style="--delay: 0.05s"><i class="fas fa-users" aria-hidden="true"></i> Collaboration</div>
+          <div class="value-chip reveal" style="--delay: 0.10s"><i class="fas fa-graduation-cap" aria-hidden="true"></i> Mentorship</div>
+          <div class="value-chip reveal" style="--delay: 0.15s"><i class="fas fa-lightbulb" aria-hidden="true"></i> Innovation</div>
+          <div class="value-chip reveal" style="--delay: 0.20s"><i class="fas fa-globe" aria-hidden="true"></i> Inclusivity</div>
+          <div class="value-chip reveal" style="--delay: 0.25s"><i class="fas fa-seedling" aria-hidden="true"></i> Growth</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ MEMBERS ═══════════════ -->
+    <section class="section section-alt" id="members" aria-labelledby="members-heading">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="section-label">The Team</span>
+          <h2 class="section-title" id="members-heading">
+            Featured <span class="text-gradient">Members</span>
+          </h2>
+          <p class="section-desc">
+            Meet the brilliant minds shaping the future of the Dream Coders community.
+          </p>
+        </div>
+
+        <div class="cards-grid members-grid">
+
+          <!-- Member 1 -->
+          <article class="member-card reveal" aria-label="HARSH DEVRE Kim, Full Stack Developer">
+            <div class="member-top">
+              <div class="member-avatar">
+                <span class="avatar-initials">AK</span>
+                <span class="presence presence-online" aria-label="Online"></span>
+              </div>
+              <div class="member-meta">
+                <h3 class="member-name">HARSH DEVRE</h3>
+                <span class="member-role">Full Stack Developer</span>
+              </div>
+            </div>
+            <p class="member-bio">Passionate about building scalable web applications and contributing to open source projects that make a real difference.</p>
+            <div class="skill-tags" aria-label="Skills">
+              <span class="skill">React</span>
+              <span class="skill">Node.js</span>
+              <span class="skill">GraphQL</span>
+            </div>
+            <div class="member-badges">
+              <span class="badge-item"><i class="fas fa-trophy" aria-hidden="true"></i> Hackathon Winner</span>
+              <span class="badge-item"><i class="fas fa-star"   aria-hidden="true"></i> Top Contributor</span>
+            </div>
+            <div class="member-links" aria-label="Social links">
+              <a href="#" aria-label="HARSH DEVRE Kim on GitHub"   class="member-link"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="HARSH DEVRE Kim on LinkedIn" class="member-link"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="HARSH DEVRE Kim on X"        class="member-link"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </article>
+
+          <!-- Member 2 (Featured) -->
+          <article class="member-card member-featured reveal" style="--delay: 0.1s" aria-label="Tanvi Parmar, Community Lead">
+            <div class="featured-banner">⭐ Community Lead</div>
+            <div class="member-top">
+              <div class="member-avatar">
+                <span class="avatar-initials">SA</span>
+                <span class="presence presence-online" aria-label="Online"></span>
+              </div>
+              <div class="member-meta">
+                <h3 class="member-name">Piyush Patel</h3>
+                <span class="member-role">AI Engineer &amp; Community Lead</span>
+              </div>
+            </div>
+            <p class="member-bio">Building intelligent systems and vibrant communities. Speaker, mentor, and open-source enthusiast pushing boundaries in AI.</p>
+            <div class="skill-tags" aria-label="Skills">
+              <span class="skill">Python</span>
+              <span class="skill">TensorFlow</span>
+              <span class="skill">LangChain</span>
+            </div>
+            <div class="member-badges">
+              <span class="badge-item"><i class="fas fa-microphone"       aria-hidden="true"></i> Speaker @ DevCon 2025</span>
+              <span class="badge-item"><i class="fas fa-fire"             aria-hidden="true"></i> 365-Day Streak</span>
+            </div>
+            <div class="member-links" aria-label="Social links">
+              <a href="#" aria-label="Piyush Patel on GitHub"   class="member-link"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Piyush Patel on LinkedIn" class="member-link"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Piyush Patel on X"        class="member-link"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </article>
+
+          <!-- Member 3 -->
+          <article class="member-card reveal" style="--delay: 0.2s" aria-label="Tanvi Parmar, DevOps Architect">
+            <div class="member-top">
+              <div class="member-avatar">
+                <span class="avatar-initials">MJ</span>
+                <span class="presence presence-away" aria-label="Away"></span>
+              </div>
+              <div class="member-meta">
+                <h3 class="member-name">Tanvi Parmar</h3>
+                <span class="member-role">DevOps &amp; Cloud Architect</span>
+              </div>
+            </div>
+            <p class="member-bio">Bridging dev and ops with cloud-native solutions. Loves Kubernetes, observability, and reducing time to resolution.</p>
+            <div class="skill-tags" aria-label="Skills">
+              <span class="skill">AWS</span>
+              <span class="skill">Docker</span>
+              <span class="skill">Terraform</span>
+            </div>
+            <div class="member-badges">
+              <span class="badge-item"><i class="fas fa-certificate"           aria-hidden="true"></i> AWS Certified</span>
+              <span class="badge-item"><i class="fas fa-chalkboard-teacher"    aria-hidden="true"></i> Mentor of the Month</span>
+            </div>
+            <div class="member-links" aria-label="Social links">
+              <a href="#" aria-label="Tanvi Parmar on GitHub"   class="member-link"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Tanvi Parmar on LinkedIn" class="member-link"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Tanvi Parmar on X"        class="member-link"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </article>
+
+          <!-- Member 4 -->
+          <article class="member-card reveal" style="--delay: 0.3s" aria-label="Rutva Pandya, UI/UX Designer">
+            <div class="member-top">
+              <div class="member-avatar">
+                <span class="avatar-initials">LP</span>
+                <span class="presence presence-online" aria-label="Online"></span>
+              </div>
+              <div class="member-meta">
+                <h3 class="member-name">Rutva Pandya</h3>
+                <span class="member-role">UI/UX Designer &amp; Frontend Dev</span>
+              </div>
+            </div>
+            <p class="member-bio">Crafting beautiful, accessible interfaces that users love. Design systems advocate and accessibility champion.</p>
+            <div class="skill-tags" aria-label="Skills">
+              <span class="skill">Figma</span>
+              <span class="skill">Vue.js</span>
+              <span class="skill">CSS</span>
+            </div>
+            <div class="member-badges">
+              <span class="badge-item"><i class="fas fa-palette"           aria-hidden="true"></i> Design Lead</span>
+              <span class="badge-item"><i class="fas fa-universal-access"  aria-hidden="true"></i> A11y Champion</span>
+            </div>
+            <div class="member-links" aria-label="Social links">
+              <a href="#" aria-label="Rutva Pandya on GitHub"   class="member-link"><i class="fab fa-github"></i></a>
+              <a href="#" aria-label="Rutva Pandya on LinkedIn" class="member-link"><i class="fab fa-linkedin"></i></a>
+              <a href="#" aria-label="Rutva Pandya on X"        class="member-link"><i class="fab fa-x-twitter"></i></a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="section-action">
+          <a href="#contact" class="btn btn-outline">View All 500+ Members &rarr;</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ EVENTS ═══════════════ -->
+    <section class="section" id="events" aria-labelledby="events-heading">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="section-label">What's On</span>
+          <h2 class="section-title" id="events-heading">
+            Events &amp; <span class="text-gradient">Challenges</span>
+          </h2>
+          <p class="section-desc">
+            Level up with our hackathons, workshops, coding challenges, and community meetups.
+          </p>
+        </div>
+
+        <div class="cards-grid events-grid">
+
+          <!-- Event 1 -->
+          <article class="event-card event-featured reveal" aria-label="Spring Code Jam 2025 hackathon">
+            <div class="event-tag event-tag-hot">🔥 Featured</div>
+            <div class="event-date-box">
+              <span class="edate-day">28</span>
+              <span class="edate-mon">MAR</span>
+            </div>
+            <div class="event-type-pill etype-hack">Hackathon</div>
+            <h3 class="event-name">Spring Code Jam 2025</h3>
+            <p class="event-desc">48-hour hackathon with $5,000 in prizes. Build something incredible with your team and claim community glory!</p>
+            <ul class="event-info" aria-label="Event details">
+              <li><i class="fas fa-users"    aria-hidden="true"></i><span>120 participants</span></li>
+              <li><i class="fas fa-clock"    aria-hidden="true"></i><span>48 hours</span></li>
+              <li><i class="fas fa-globe"    aria-hidden="true"></i><span>Virtual</span></li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-sm">Register Now</a>
+          </article>
+
+          <!-- Event 2 -->
+          <article class="event-card reveal" style="--delay: 0.1s" aria-label="React Server Components workshop">
+            <div class="event-tag event-tag-soon">Upcoming</div>
+            <div class="event-date-box">
+              <span class="edate-day">05</span>
+              <span class="edate-mon">APR</span>
+            </div>
+            <div class="event-type-pill etype-workshop">Workshop</div>
+            <h3 class="event-name">Mastering React Server Components</h3>
+            <p class="event-desc">Deep dive into Next.js 15 and React Server Components with industry experts. Hands-on labs included.</p>
+            <ul class="event-info" aria-label="Event details">
+              <li><i class="fas fa-users"  aria-hidden="true"></i><span>50 seats</span></li>
+              <li><i class="fas fa-clock"  aria-hidden="true"></i><span>3 hours</span></li>
+              <li><i class="fas fa-video"  aria-hidden="true"></i><span>Online</span></li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Reserve Spot</a>
+          </article>
+
+          <!-- Event 3 -->
+          <article class="event-card reveal" style="--delay: 0.2s" aria-label="Algorithm Blitz weekly challenge">
+            <div class="event-tag event-tag-challenge">Challenge</div>
+            <div class="event-date-box">
+              <span class="edate-day">15</span>
+              <span class="edate-mon">APR</span>
+            </div>
+            <div class="event-type-pill etype-challenge">Weekly Challenge</div>
+            <h3 class="event-name">Algorithm Blitz #42</h3>
+            <p class="event-desc">Solve 5 algorithmic problems in 90 minutes. Earn badges and climb the community leaderboard.</p>
+            <ul class="event-info" aria-label="Event details">
+              <li><i class="fas fa-users"  aria-hidden="true"></i><span>Open to all</span></li>
+              <li><i class="fas fa-clock"  aria-hidden="true"></i><span>90 mins</span></li>
+              <li><i class="fas fa-globe"  aria-hidden="true"></i><span>Platform</span></li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Join Challenge</a>
+          </article>
+
+          <!-- Event 4 -->
+          <article class="event-card reveal" style="--delay: 0.3s" aria-label="Monthly Dev Talks meetup">
+            <div class="event-date-box">
+              <span class="edate-day">22</span>
+              <span class="edate-mon">APR</span>
+            </div>
+            <div class="event-type-pill etype-meetup">Meetup</div>
+            <h3 class="event-name">Monthly Dev Talks</h3>
+            <p class="event-desc">Community members share projects, ideas, and lessons learned. Lightning talks always welcome!</p>
+            <ul class="event-info" aria-label="Event details">
+              <li><i class="fas fa-users"    aria-hidden="true"></i><span>All members</span></li>
+              <li><i class="fas fa-clock"    aria-hidden="true"></i><span>2 hours</span></li>
+              <li><i class="fas fa-building" aria-hidden="true"></i><span>Hybrid</span></li>
+            </ul>
+            <a href="#" class="btn btn-outline btn-sm">Learn More</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ BLOG & RESOURCES ═══════════════ -->
+    <section class="section section-alt" id="blog" aria-labelledby="blog-heading">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="section-label">Knowledge Hub</span>
+          <h2 class="section-title" id="blog-heading">
+            Blog &amp; <span class="text-gradient">Resources</span>
+          </h2>
+          <p class="section-desc">
+            Stay sharp with tutorials, deep-dives, and curated resources from our community experts.
+          </p>
+        </div>
+
+        <div class="cards-grid blog-grid">
+
+          <!-- Post 1 -->
+          <article class="blog-card reveal" aria-label="Blog post: Building AI Agents with LangChain">
+            <div class="blog-visual bv-1" aria-hidden="true"><i class="fas fa-brain"></i></div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-cat cat-ai">AI / ML</span>
+                <time class="blog-time" datetime="2025-03-18">Mar 18, 2025</time>
+              </div>
+              <h3 class="blog-title">Building Your First AI Agent with LangChain in 2025</h3>
+              <p class="blog-excerpt">A comprehensive guide to creating intelligent, context-aware applications using the latest LangChain features and best practices.</p>
+              <div class="blog-foot">
+                <div class="blog-author">
+                  <span class="mini-av" aria-hidden="true">SA</span>
+                  <span>Tanvi Parmar</span>
+                </div>
+                <span class="read-time" aria-label="8 minute read">
+                  <i class="fas fa-clock" aria-hidden="true"></i> 8 min
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 2 -->
+          <article class="blog-card reveal" style="--delay: 0.1s" aria-label="Blog post: Advanced TypeScript Patterns">
+            <div class="blog-visual bv-2" aria-hidden="true"><i class="fas fa-code-branch"></i></div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-cat cat-web">Web Dev</span>
+                <time class="blog-time" datetime="2025-03-14">Mar 14, 2025</time>
+              </div>
+              <h3 class="blog-title">Advanced TypeScript Patterns Every Developer Should Know</h3>
+              <p class="blog-excerpt">Master generics, conditional types, and utility types to write safer, more expressive TypeScript code that scales.</p>
+              <div class="blog-foot">
+                <div class="blog-author">
+                  <span class="mini-av" aria-hidden="true">AK</span>
+                  <span>HARSH DEVRE Kim</span>
+                </div>
+                <span class="read-time" aria-label="12 minute read">
+                  <i class="fas fa-clock" aria-hidden="true"></i> 12 min
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Post 3 -->
+          <article class="blog-card reveal" style="--delay: 0.2s" aria-label="Blog post: Kubernetes Blue-Green Deployments">
+            <div class="blog-visual bv-3" aria-hidden="true"><i class="fas fa-cloud"></i></div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span class="blog-cat cat-devops">DevOps</span>
+                <time class="blog-time" datetime="2025-03-10">Mar 10, 2025</time>
+              </div>
+              <h3 class="blog-title">Zero-Downtime Deployments with Kubernetes Blue-Green Strategy</h3>
+              <p class="blog-excerpt">Step-by-step implementation of blue-green deployments to eliminate production disruptions for good.</p>
+              <div class="blog-foot">
+                <div class="blog-author">
+                  <span class="mini-av" aria-hidden="true">MJ</span>
+                  <span>Tanvi Parmar</span>
+                </div>
+                <span class="read-time" aria-label="10 minute read">
+                  <i class="fas fa-clock" aria-hidden="true"></i> 10 min
+                </span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Resources -->
+        <div class="resources-block">
+          <h3 class="resources-heading">Developer Resources</h3>
+          <div class="resources-grid">
+            <a href="#" class="resource-link"><i class="fas fa-book"     aria-hidden="true"></i><span>Documentation Hub</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#" class="resource-link"><i class="fas fa-video"    aria-hidden="true"></i><span>Video Tutorials</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#" class="resource-link"><i class="fas fa-tools"    aria-hidden="true"></i><span>Dev Tools &amp; Templates</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#" class="resource-link"><i class="fab fa-github"   aria-hidden="true"></i><span>Open Source Projects</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#" class="resource-link"><i class="fas fa-podcast"  aria-hidden="true"></i><span>Community Podcast</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+            <a href="#" class="resource-link"><i class="fab fa-discord"  aria-hidden="true"></i><span>Discord Community</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="section-head">
+          <span class="section-label">Get Involved</span>
+          <h2 class="section-title" id="contact-heading">
+            Contact &amp; <span class="text-gradient">Collaborate</span>
+          </h2>
+          <p class="section-desc">
+            Ready to join, collaborate, or partner with us? We'd love to hear from you.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+
+          <!-- Left: Info -->
+          <div class="contact-info reveal">
+            <h3>Let's Build Together</h3>
+            <p>Whether you're a seasoned developer, a curious beginner, or an organization looking to partner — there's a place for you in Dream Coders.</p>
+
+            <div class="contact-channels">
+              <div class="contact-channel">
+                <div class="channel-icon" aria-hidden="true"><i class="fas fa-envelope"></i></div>
+                <div class="channel-text">
+                  <strong>Email Us</strong>
+                  <a href="mailto:hello@dreamcoders.dev">hello@dreamcoders.dev</a>
+                </div>
+              </div>
+              <div class="contact-channel">
+                <div class="channel-icon" aria-hidden="true"><i class="fab fa-discord"></i></div>
+                <div class="channel-text">
+                  <strong>Join Discord</strong>
+                  <a href="#">discord.gg/dreamcoders</a>
+                </div>
+              </div>
+              <div class="contact-channel">
+                <div class="channel-icon" aria-hidden="true"><i class="fab fa-github"></i></div>
+                <div class="channel-text">
+                  <strong>Contribute</strong>
+                  <a href="#">github.com/dreamcoders</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-row" aria-label="Social media links">
+              <a href="#" class="social-icon" aria-label="GitHub">  <i class="fab fa-github"></i></a>
+              <a href="#" class="social-icon" aria-label="Discord"> <i class="fab fa-discord"></i></a>
+              <a href="#" class="social-icon" aria-label="Twitter"> <i class="fab fa-x-twitter"></i></a>
+              <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="social-icon" aria-label="YouTube"> <i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact-form-wrap reveal" style="--delay: 0.15s">
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="f-name">Full Name</label>
+                  <input type="text"  id="f-name"  name="name"    placeholder="Your name"        autocomplete="name"  required>
+                </div>
+                <div class="form-field">
+                  <label for="f-email">Email Address</label>
+                  <input type="email" id="f-email" name="email"   placeholder="your@email.com"  autocomplete="email" required>
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="f-type">I'm interested in…</label>
+                <select id="f-type" name="type">
+                  <option value="">Select a purpose</option>
+                  <option value="join">Joining the community</option>
+                  <option value="collab">Collaboration / Partnership</option>
+                  <option value="sponsor">Sponsoring an event</option>
+                  <option value="speak">Speaking opportunity</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="f-msg">Message</label>
+                <textarea id="f-msg" name="message" rows="4" placeholder="Tell us about yourself or your proposal…"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════ FOOTER ═══════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-about">
+          <a href="#" class="nav-logo footer-logo" aria-label="Dream Coders home">
+            <span class="logo-bracket" aria-hidden="true">&lt;/&gt;</span>
+            <span class="logo-name">Dream<span class="logo-accent">Coders</span></span>
+          </a>
+          <p>A community of passionate developers building the future, one commit at a time.</p>
+          <div class="social-row" aria-label="Social links">
+            <a href="#" class="social-icon" aria-label="GitHub">  <i class="fab fa-github"></i></a>
+            <a href="#" class="social-icon" aria-label="Discord"> <i class="fab fa-discord"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"> <i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#mission">Mission</a></li>
+            <li><a href="#members">Members</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#blog">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Tutorials</a></li>
+            <li><a href="#">Open Source</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#">Discord Server</a></li>
+            <li><a href="#">GitHub Org</a></li>
+            <li><a href="#">Partner With Us</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bar">
+        <p>&copy; 2025 Dream Coders. Built with &#10084;&#65039; by the community.</p>
+        <nav aria-label="Legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Code of Conduct</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
